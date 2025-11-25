@@ -44,5 +44,4 @@ for idx, (g, exact, color) in enumerate(st.session_state.history):
 if st.button("🔄 New Game"):
     st.session_state.secret_code = [random.choice(COLORS) for _ in range(CODE_LENGTH)]
     st.session_state.history = []
-        st.rerun()
-
+    st.rerun()
